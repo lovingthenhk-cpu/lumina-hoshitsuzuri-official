@@ -38,3 +38,5 @@
 .dialog-art img{width:115%;height:auto;max-width:none;margin-top:10px}
 @media(max-width:850px){.hero-visual .character-art{width:730px;bottom:20px}.hero-visual .star-companion-art{width:120px;right:0;top:140px}.hero-visual .lantern-art{width:82px;top:300px;left:-9px}}
 @media(max-width:650px){.hero-visual .character-art{width:610px;bottom:-3px;left:46%;transform:translateX(-43%)}.hero-visual .star-companion-art{width:100px;right:-8px;top:50px}.hero-visual .lantern-art{width:60px;left:0;top:180px}.profile-image-wrap img{width:190%;bottom:4%;left:47%}.gallery-tile-a>img{width:122%;top:8%;left:48%}.gallery-tile-c>img{width:195%;top:15%;left:40%}}
+/* Keep Lumina's face near the upper third of the hero composition. */
+@media(min-width:851px){.hero-visual .character-art{bottom:95px}}
