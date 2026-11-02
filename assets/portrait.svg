@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 690 940" fill="none" role="img" aria-label="星綴ルミナのキャラクターイラスト">
+<defs>
+  <linearGradient id="hair" x1="125" y1="190" x2="547" y2="813" gradientUnits="userSpaceOnUse"><stop stop-color="#f3efff"/><stop offset=".38" stop-color="#c5bded"/><stop offset=".75" stop-color="#8785bd"/><stop offset="1" stop-color="#5e659b"/></linearGradient>
+  <linearGradient id="hairLight" x1="245" y1="140" x2="475" y2="675" gradientUnits="userSpaceOnUse"><stop stop-color="#fffdfb"/><stop offset=".5" stop-color="#d9d4f7"/><stop offset="1" stop-color="#9b9aca"/></linearGradient>
+  <linearGradient id="skin" x1="300" y1="320" x2="412" y2="623" gradientUnits="userSpaceOnUse"><stop stop-color="#fff3e8"/><stop offset=".65" stop-color="#ffddcf"/><stop offset="1" stop-color="#edb3b8"/></linearGradient>
+  <linearGradient id="coat" x1="216" y1="645" x2="549" y2="912" gradientUnits="userSpaceOnUse"><stop stop-color="#57629e"/><stop offset=".49" stop-color="#313c74"/><stop offset="1" stop-color="#111c44"/></linearGradient>
+  <linearGradient id="sleeve" x1="162" y1="680" x2="506" y2="830" gradientUnits="userSpaceOnUse"><stop stop-color="#fffdfc"/><stop offset="1" stop-color="#c8cfec"/></linearGradient>
+  <linearGradient id="hat" x1="213" y1="124" x2="478" y2="286" gradientUnits="userSpaceOnUse"><stop stop-color="#6f7cb4"/><stop offset=".57" stop-color="#424d8a"/><stop offset="1" stop-color="#262e63"/></linearGradient>
+  <linearGradient id="eye" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#445686"/><stop offset=".45" stop-color="#826db1"/><stop offset="1" stop-color="#c68ed0"/></linearGradient>
+  <radialGradient id="pink"><stop stop-color="#ee8299" stop-opacity=".52"/><stop offset="1" stop-color="#ffb9b2" stop-opacity="0"/></radialGradient>
+  <linearGradient id="envelope" x1="300" y1="722" x2="420" y2="844" gradientUnits="userSpaceOnUse"><stop stop-color="#fffdf1"/><stop offset="1" stop-color="#d2d7f4"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="165%"><feDropShadow dx="0" dy="13" stdDeviation="14" flood-color="#151c49" flood-opacity=".26"/></filter>
+</defs>
+<!-- soft atmosphere -->
+<path d="M85 718C126 510 101 329 215 203c93-101 278-94 370 40 88 130 31 377-23 536-41 119-441 121-477-61Z" fill="#bdc2f0" opacity=".09"/>
+<g opacity=".93" fill="#f6d99e"><path d="M114 292l6 16 16 6-16 6-6 16-6-16-16-6 16-6 6-16ZM532 169l5 13 13 5-13 5-5 13-5-13-13-5 13-5 5-13ZM573 597l5 13 13 5-13 5-5 13-5-13-13-5 13-5 5-13Z"/><circle cx="158" cy="188" r="3"/><circle cx="553" cy="427" r="3"/></g>
+<!-- long flowing back hair -->
+<g filter="url(#shadow)">
+<path d="M208 314C198 250 248 175 331 159c97-20 187 30 211 135 13 56 6 140 17 213 10 69 48 166 22 232-17 43-56 52-93 30 4 33-20 54-47 49-30-6-45-25-49-53-39 22-69 21-98-6-41 28-78 17-94-17-25 28-69 6-72-31-5-56 34-133 36-215 2-74-21-139 44-182Z" fill="url(#hair)" stroke="#8e91c5" stroke-width="4"/>
+<path d="M182 412c-7 156-75 300-14 346 20 15 48 10 61-7-29-37-4-108 5-154" fill="#9d9fd0" opacity=".72"/>
+<path d="M484 364c0 149 75 306 42 373-14 31-39 32-57 15" stroke="#e6e4fb" stroke-width="13" opacity=".56" stroke-linecap="round"/>
+<path d="M238 368c-2 132-56 284-21 342" stroke="#f9f7ff" stroke-width="14" opacity=".5" stroke-linecap="round"/>
+<path d="M510 315c55 122 6 245 45 368" stroke="#7c84b8" stroke-width="15" opacity=".35" stroke-linecap="round"/>
+</g>
+<!-- hair ribbon left -->
+<g transform="translate(191 494) rotate(-18)"><path d="M0 4C-46-38-63-8-30 14-67 33-45 57 2 22" fill="#eee5ff" stroke="#a79ecb" stroke-width="3"/><path d="M3 11C44-42 63-18 39 12c30 21 7 41-35 17" fill="#d8c7fa" stroke="#a79ecb" stroke-width="3"/><circle cx="3" cy="15" r="16" fill="#f4d5a8"/></g>
+<!-- body with puff sleeves -->
+<path d="M250 613c-82 8-117 54-113 139 3 49 44 71 92 47l35-109M441 610c87 7 118 55 119 133 0 62-50 86-96 47l-38-91" fill="url(#sleeve)" stroke="#929dca" stroke-width="5"/>
+<path d="M193 667c-18 30-20 69-9 93M501 673c18 28 22 64 8 92" stroke="#dce0f5" stroke-width="11" stroke-linecap="round"/>
+<path d="M271 614c48-16 100-15 150 1l57 49 64 236H165l64-235 42-51Z" fill="url(#coat)" stroke="#242d60" stroke-width="5"/>
+<path d="M290 612c24 30 43 54 61 70 17-13 35-35 55-70" fill="#fffaf6" stroke="#e5dfe6" stroke-width="4"/>
+<path d="M246 630c17 35 48 79 101 120L275 763c-32-34-61-75-70-114l41-19ZM440 630c-22 50-53 92-89 119l78 14c34-40 54-77 56-110l-45-23Z" fill="#e5eaff" stroke="#aeb8e2" stroke-width="4"/>
+<path d="M272 683l74 68M434 682l-83 69" stroke="#7f8bbf" stroke-width="2.5"/>
+<path d="M348 734V900" stroke="#acabd3" stroke-width="3"/>
+<circle cx="348" cy="793" r="6" fill="#e7ce95"/><circle cx="348" cy="829" r="6" fill="#e7ce95"/><circle cx="348" cy="865" r="6" fill="#e7ce95"/>
+<path d="M228 825c-7 32-15 58-27 75M472 825c8 32 17 58 30 75" stroke="#aeb7db" stroke-width="3" opacity=".55"/>
+<!-- neck -->
+<path d="M313 555v84c16 38 57 43 85 1v-84" fill="url(#skin)" stroke="#e5adb0" stroke-width="4"/>
+<!-- ears -->
+<ellipse cx="223" cy="452" rx="24" ry="43" fill="#ffdccc" stroke="#ebb4b1" stroke-width="4"/>
+<ellipse cx="479" cy="452" rx="24" ry="43" fill="#ffdccc" stroke="#ebb4b1" stroke-width="4"/>
+<path d="M212 458c4-17 15-22 23 0M468 457c10-19 18-13 20 1" stroke="#dc9c9f" stroke-width="3" stroke-linecap="round"/>
+<!-- face -->
+<path d="M225 342c12-80 63-117 133-117 77 0 128 56 128 124v100c0 104-57 160-128 163-76 4-132-74-137-156l4-114Z" fill="url(#skin)" stroke="#e9b4bb" stroke-width="4"/>
+<!-- cheek glow -->
+<ellipse cx="267" cy="512" rx="55" ry="31" fill="url(#pink)"/><ellipse cx="433" cy="512" rx="52" ry="29" fill="url(#pink)"/>
+<!-- eye white left -->
+<path d="M256 452c11-17 43-21 60 0-11 21-45 22-60 0Z" fill="#fffaf9" stroke="#5b547e" stroke-width="4" stroke-linejoin="round"/>
+<path d="M385 452c11-20 47-16 60 1-13 22-45 21-60-1Z" fill="#fffaf9" stroke="#5b547e" stroke-width="4" stroke-linejoin="round"/>
+<ellipse cx="286" cy="455" rx="16" ry="23" fill="#4b5b94"/><ellipse cx="415" cy="455" rx="16" ry="23" fill="#4b5b94"/>
+<ellipse cx="286" cy="457" rx="11" ry="18" fill="#9f81c8"/><ellipse cx="415" cy="457" rx="11" ry="18" fill="#9f81c8"/>
+<ellipse cx="286" cy="462" rx="5" ry="10" fill="#26345f"/><ellipse cx="415" cy="462" rx="5" ry="10" fill="#26345f"/>
+<circle cx="280" cy="446" r="7" fill="#fff"/><circle cx="410" cy="445" r="7" fill="#fff"/><circle cx="295" cy="465" r="3.5" fill="#f7f0ff"/><circle cx="424" cy="464" r="3.5" fill="#f7f0ff"/>
+<path d="M253 452c-2-8-4-13-8-14M442 454c7-6 9-11 10-17" stroke="#514766" stroke-width="4" stroke-linecap="round"/>
+<!-- brows -->
+<path d="M259 419c13-11 29-12 42-7M397 411c15-8 31-7 42 5" stroke="#917da4" stroke-width="4" stroke-linecap="round"/>
+<!-- face -->
+<path d="M348 472c-4 11-6 17-3 21" stroke="#e6a7b1" stroke-width="3" stroke-linecap="round"/>
+<path d="M332 527c12 12 27 13 41 0" stroke="#b66d83" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M340 527c5 7 14 8 20 7" stroke="#e49da4" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="263" cy="510" r="3" fill="#fff4e8" opacity=".9"/><circle cx="442" cy="510" r="3" fill="#fff4e8" opacity=".9"/>
+<!-- front fringe -->
+<path d="M217 367c-5-54 13-107 50-135 44-34 115-40 164-18 47 21 75 72 64 144-14-19-20-46-24-70-21 19-49 26-73 23-17 21-32 39-63 45-8-15-13-28-16-44-18 40-53 51-102 55Z" fill="url(#hairLight)" stroke="#9d9dc8" stroke-width="4"/>
+<path d="M308 254c9 48-22 82-53 100M365 235c18 52 3 81-33 109M424 250c-6 28-24 52-43 68M465 278c-7 33-24 52-38 64" stroke="#fffefa" stroke-width="7" opacity=".6" stroke-linecap="round"/>
+<path d="M219 347c-22 79-7 154-25 211-14 42-41 88-35 131 12 24 34 27 51 4 12-68 19-103 36-139-9-73-16-130-27-207Z" fill="url(#hair)" stroke="#9295bf" stroke-width="3"/>
+<path d="M484 350c25 83 5 152 34 219 13 29 31 61 23 104-13 21-35 21-49 3-9-45-20-95-35-120 10-73 18-133 27-206Z" fill="url(#hair)" stroke="#8c8fbc" stroke-width="3"/>
+<path d="M212 490c-8 75-21 137-32 172M491 485c6 66 23 132 30 167" stroke="#f4f3ff" stroke-width="8" opacity=".43" stroke-linecap="round"/>
+<!-- hat -->
+<g transform="rotate(-9 350 233)">
+<path d="M221 245c-16-31 1-73 50-99 63-34 152-25 207 25 32 30 40 58 27 78-56-22-196-30-284-4Z" fill="url(#hat)" stroke="#323969" stroke-width="4"/>
+<path d="M215 244c72-19 218-22 290 5-19 31-77 27-150 15-58-9-98-3-140-20Z" fill="#394377" stroke="#23294f" stroke-width="4"/>
+<path d="M247 220c56-34 148-32 221-7" stroke="#9aa5d7" stroke-width="5" opacity=".58" stroke-linecap="round"/>
+<path d="M316 154l15-34 15 33 35 8-32 17-6 35-23-26-37 3 21-25-9-11Z" fill="#f7dba8" stroke="#fef0cc" stroke-width="3"/>
+<circle cx="333" cy="164" r="10" fill="#fff8e5"/>
+</g>
+<!-- star hairpins -->
+<path d="M482 333l6 15 15 6-15 6-6 15-6-15-15-6 15-6 6-15Z" fill="#f5d9a3" stroke="#fff3db" stroke-width="2.5"/>
+<path d="M195 399l4 9 9 4-9 4-4 9-4-9-9-4 9-4 4-9Z" fill="#fff4cf"/>
+<!-- collar bow -->
+<path d="M350 735c-36-49-73-37-65-8 8 27 39 24 65 10 27 15 62 19 67-10 6-29-31-39-67 8Z" fill="#c6aedf" stroke="#8175b5" stroke-width="4"/>
+<path d="M350 747l-20 59 22-12 22 12-13-59" fill="#e2c9e9" stroke="#8e83b7" stroke-width="3"/>
+<circle cx="350" cy="741" r="13" fill="#f9d99f" stroke="#fff3d4" stroke-width="3"/><path d="M350 731v20M340 741h20" stroke="#ba9c75" stroke-width="2"/>
+<!-- hands and letter -->
+<g filter="url(#shadow)">
+<path d="M272 776c-26-6-52-26-59-1-7 23 20 52 49 59l48 11 9-37-47-32Z" fill="url(#skin)" stroke="#dda7a7" stroke-width="4"/>
+<path d="M436 775c27-9 53-21 58 6 3 25-23 51-51 57l-52 11-7-40 52-34Z" fill="url(#skin)" stroke="#dda7a7" stroke-width="4"/>
+<path d="M274 776l-23-6M267 792l-30-9M444 782l27-10M450 798l26-9" stroke="#e8b1ad" stroke-width="3" stroke-linecap="round"/>
+<rect x="266" y="760" width="173" height="111" rx="9" fill="url(#envelope)" stroke="#b0b6d8" stroke-width="4" transform="rotate(-4 266 760)"/>
+<path d="M268 765l92 64 78-74" stroke="#adb4d4" stroke-width="4" stroke-linejoin="round"/>
+<path d="M270 864l70-60M430 856l-61-53" stroke="#d3d6e9" stroke-width="3"/>
+<circle cx="354" cy="814" r="15" fill="#b0a0d7"/><path d="M354 805l3 7 7 2-7 3-3 7-3-7-7-3 7-2 3-7Z" fill="#fff4d8"/>
+<path d="M276 781c9 2 18 7 23 11" stroke="#fbe4d5" stroke-width="7" stroke-linecap="round"/>
+</g>
+<!-- stray twinkles -->
+<path d="M578 390l4 11 11 4-11 4-4 11-4-11-11-4 11-4 4-11ZM126 594l5 12 12 5-12 5-5 12-5-12-12-5 12-5 5-12Z" fill="#fff6df"/>
+<circle cx="553" cy="270" r="4" fill="#f7d4ae"/><circle cx="112" cy="453" r="3" fill="#cfc8ff"/>
+</svg>
