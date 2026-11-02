@@ -73,7 +73,13 @@
   const gallery = [
     { title: "Starlight Postgirl", image: "assets/lumina-generated.png", css: "" },
     { title: "A Letter to the Sky", image: null, css: "letter-art" },
-    { title: "Moonlit Promise", image: "assets/lumina-generated.png", css: "moonlight" }
+    { title: "Moonlit Promise", image: "assets/lumina-generated.png", css: "moonlight" },
+    { title: "Starlit Evening", image: "assets/lumina-evening.webp", css: "new-art" },
+    { title: "Little Smile", image: "assets/lumina-smile.webp", css: "new-art" },
+    { title: "Star Mailbox", image: "assets/star-postbox.webp", css: "new-art" },
+    { title: "Starlight Letter", image: "assets/lumina-starlight.webp", css: "new-art" },
+    { title: "Little Companion", image: "assets/lumina-companion.webp", css: "new-art" },
+    { title: "Lantern of Stars", image: "assets/starlight-lantern.webp", css: "new-art" }
   ];
   document.querySelectorAll("[data-art]").forEach((tile) => {
     tile.addEventListener("click", () => {
@@ -98,7 +104,7 @@
         letter.textContent = "✉";
         dialogArt.append(moon, letter);
       }
-      dialogNumber.textContent = String(index + 1).padStart(2, "0") + " / 03";
+      dialogNumber.textContent = String(index + 1).padStart(2, "0") + " / " + String(gallery.length).padStart(2,"0");
       dialogTitle.textContent = item.title;
       dialog.showModal();
     });

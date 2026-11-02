@@ -40,3 +40,13 @@
 @media(max-width:650px){.hero-visual .character-art{width:610px;bottom:-3px;left:46%;transform:translateX(-43%)}.hero-visual .star-companion-art{width:100px;right:-8px;top:50px}.hero-visual .lantern-art{width:60px;left:0;top:180px}.profile-image-wrap img{width:190%;bottom:4%;left:47%}.gallery-tile-a>img{width:122%;top:8%;left:48%}.gallery-tile-c>img{width:195%;top:15%;left:40%}}
 /* Keep Lumina's face near the upper third of the hero composition. */
 @media(min-width:851px){.hero-visual .character-art{bottom:95px}}
+
+/* Illustrated gallery expansion */
+.gallery-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.gallery-tile.gallery-new{background:linear-gradient(135deg,#b2a4d4,#505c91)}
+.gallery-new>img,.gallery-new:hover>img{inset:0;width:100%;height:100%;object-fit:cover;max-width:100%;transform:none}
+.gallery-new:hover>img{transform:scale(1.05)}
+.gallery-new.gallery-tile-e>img,.gallery-new.gallery-tile-f>img,.gallery-new.gallery-tile-h>img,.gallery-new.gallery-tile-i>img{object-position:center}
+.dialog-art.new-art{background:radial-gradient(circle at 50% 45%,#aca8d1,#45527d)}
+.dialog-art.new-art img{display:block;max-width:100%;max-height:68vh;width:auto;height:auto;margin:0;object-fit:contain;box-shadow:0 8px 30px #1f264b55}
+@media(max-width:650px){.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery-new>img{height:100%;width:100%}}
