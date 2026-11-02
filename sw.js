@@ -1,9 +1,9 @@
 /* Versioned same-origin cache. No messages or personally entered text is stored. */
-const CACHE_NAME="lumina-offline-v3";
+const CACHE_NAME="lumina-offline-v4";
 const CORE=[
-  "./","./index.html","./styles.css?v=20261103-1","./extras.css?v=20261103-1",
-  "./script.js?v=20261103-1","./extras.js?v=20261103-1",
-  "./assets/lumina-generated.png","./assets/star-companion.png",
+  "./","./index.html","./styles.css?v=20261103-1","./extras.css?v=20261103-2",
+  "./script.js?v=20261103-1","./extras.js?v=20261103-2",
+  "./meteor.js?v=20261103-1","./assets/lumina-generated.png","./assets/star-companion.png",
   "./assets/star-lantern.png","./assets/favicon.svg",
   "./assets/app-icon-192.png","./assets/app-icon-512.png"
 ];

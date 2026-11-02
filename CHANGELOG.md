@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.0.0 — 2026-11-03
+## 2.1.0 — 2026-11-03\n- Added playable Meteor Catch game with touch/mouse/keyboard controls and local best score.\n\n## 2.0.0 — 2026-11-03
 - Added six-location interactive world atlas with unlockable exploration achievement.
 - Added daily fictional fortune and four-question star personality quiz.
 - Added four in-universe diary entries with accessible tab switching.

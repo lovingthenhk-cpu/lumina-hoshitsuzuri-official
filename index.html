@@ -21,9 +21,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css?v=20261103-1">
-  <link rel="stylesheet" href="extras.css?v=20261103-1">
+  <link rel="stylesheet" href="extras.css?v=20261103-2">
   <script src="script.js?v=20261103-1" defer></script>
-  <script src="extras.js?v=20261103-1" defer></script>
+  <script src="extras.js?v=20261103-2" defer></script>
+  <script src="meteor.js?v=20261103-1" defer></script>
 </head>
 <body>
   <div class="scroll-progress" aria-hidden="true"></div>
@@ -92,7 +93,7 @@
           <a href="#observatory"><span>✦</span> 星図を探検</a>
           <a href="#oracle"><span>☾</span> 今日の運勢</a>
           <a href="#quiz"><span>✧</span> 星属性診断</a>
-          <a href="#postcard"><span>✉</span> 絵はがきを作る</a>
+          <a href="#postcard"><span>✉</span> 絵はがきを作る</a><a href="#meteor-game"><span>✳</span> 流星キャッチ</a>
         </div>
       </div>
     </section>
@@ -276,9 +277,33 @@
       </div>
     </section>
 
+    <section class="meteor-section extra-section" id="meteor-game" aria-labelledby="meteor-title">
+      <div class="container meteor-layout">
+        <div class="meteor-intro">
+          <span class="section-kicker">09 — METEOR CATCH</span>
+          <h2 id="meteor-title">Catch the <em>Stars.</em></h2>
+          <p class="meteor-lead">流れ星をつかまえよう！</p>
+          <p>30秒間、落ちてくる星をできるだけたくさん集めてね。流星はクリック・タップでつかまえられます。キーボードなら、ゲーム画面にフォーカスしてスペースキーでもOK。</p>
+          <div class="meteor-scoreboard">
+            <div><span>NOW</span><strong id="meteor-score">00</strong></div>
+            <div><span>BEST</span><strong id="meteor-best">00</strong></div>
+            <div><span>TIME</span><strong id="meteor-time">30s</strong></div>
+          </div>
+          <button id="meteor-start" type="button" class="extra-primary">流星キャッチを始める <span>✦</span></button>
+          <p id="meteor-message" class="meteor-message" role="status" aria-live="polite">最初の一歩は、星を見上げることから。</p>
+          <p class="local-note">ハイスコアだけをこのブラウザに保存します。</p>
+        </div>
+        <div class="meteor-stage">
+          <div class="meteor-stage-bar"><span>✧ METEOR FIELD / SECTOR 07</span><span>STAR CATCHING ZONE</span></div>
+          <canvas id="meteor-canvas" width="700" height="440" tabindex="0" role="img" aria-label="落ちてくる星をクリックまたはタップ。キーボードではスペースキーで一番近い星をキャッチします"></canvas>
+          <div class="meteor-stage-bottom"><span>✦ COLLECT THE FALLING STARS</span><span>30 SEC CHALLENGE</span></div>
+        </div>
+      </div>
+    </section>
+
     <section class="diary-section extra-section" id="diary" aria-labelledby="diary-title">
       <div class="container">
-        <div class="extra-heading"><span class="section-kicker">09 — LUMINA'S NOTEBOOK</span><h2 id="diary-title">Starry <em>Diary.</em></h2><p>ルミナの小さな日常を綴った、星色の日誌。</p></div>
+        <div class="extra-heading"><span class="section-kicker">10 — LUMINA'S NOTEBOOK</span><h2 id="diary-title">Starry <em>Diary.</em></h2><p>ルミナの小さな日常を綴った、星色の日誌。</p></div>
         <div class="diary-layout">
           <div class="diary-tabs" role="tablist" aria-label="ルミナの日誌">
             <button type="button" role="tab" id="diary-tab-0" aria-controls="diary-article" aria-selected="true" data-diary="0">01 <span>迷子の流れ星</span><small>2026.11.03</small></button>
@@ -299,7 +324,7 @@
 
     <section class="postcard-section extra-section" id="postcard" aria-labelledby="postcard-title">
       <div class="container">
-        <div class="extra-heading"><span class="section-kicker">10 — CREATE YOUR OWN LETTER</span><h2 id="postcard-title">Star <em>Postcard Studio.</em></h2><p>夜空のポストカードを作って、画像として手元に残そう。</p></div>
+        <div class="extra-heading"><span class="section-kicker">11 — CREATE YOUR OWN LETTER</span><h2 id="postcard-title">Star <em>Postcard Studio.</em></h2><p>夜空のポストカードを作って、画像として手元に残そう。</p></div>
         <div class="postcard-layout">
           <form class="postcard-editor" id="postcard-form">
             <label for="postcard-to">宛名 <small>TO</small></label>
@@ -328,7 +353,7 @@
 
     <section class="collection-section extra-section" id="collection" aria-labelledby="collection-title">
       <div class="container">
-        <div class="collection-heading"><div><span class="section-kicker">11 — THE STAMP COLLECTION</span><h2 id="collection-title">Star <em>Passport.</em></h2><p>サイトで遊んだ思い出が、星の切手になるよ。</p></div><div class="collection-count"><strong id="stamps-count">0 / 6</strong><span>STAMPS COLLECTED</span></div></div>
+        <div class="collection-heading"><div><span class="section-kicker">12 — THE STAMP COLLECTION</span><h2 id="collection-title">Star <em>Passport.</em></h2><p>サイトで遊んだ思い出が、星の切手になるよ。</p></div><div class="collection-count"><strong id="stamps-count">0 / 6</strong><span>STAMPS COLLECTED</span></div></div>
         <div class="stamp-grid" id="stamp-grid">
           <div class="stamp-slot" data-stamp="visitor"><span>✧</span><strong>はじめての訪問</strong><small>サイトに来てくれた記念</small></div>
           <div class="stamp-slot" data-stamp="explorer"><span>✦</span><strong>星図の探検家</strong><small>6つの場所を見つける</small></div>
@@ -344,7 +369,7 @@
 
     <section class="faq-section extra-section" id="faq" aria-labelledby="faq-title">
       <div class="container faq-layout">
-        <div><span class="section-kicker">12 — QUESTIONS & ANSWERS</span><h2 id="faq-title">FAQ<span class="title-dot">.</span></h2><p>星の郵便局によく届く質問。</p></div>
+        <div><span class="section-kicker">13 — QUESTIONS & ANSWERS</span><h2 id="faq-title">FAQ<span class="title-dot">.</span></h2><p>星の郵便局によく届く質問。</p></div>
         <div class="faq-items">
           <details><summary>ルミナは本当にいるの？ <span>＋</span></summary><p>星綴ルミナはこのサイトのために作られた架空のキャラクターです。日記やニュースも創作世界の設定ですよ。</p></details>
           <details><summary>手紙を送ったら、誰かに読まれる？ <span>＋</span></summary><p>いいえ。星のポストの文章は外部サーバーに送信されず、画面上で返事を表示するだけです。実際の送信機能はありません。</p></details>

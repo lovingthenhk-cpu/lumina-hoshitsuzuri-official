@@ -262,3 +262,31 @@ body.sky-aurora .outro{background:#343a67}
 .share-site:hover{background:#27345b}
 @media(max-width:650px){.share-site{margin-top:10px}}
 html{overflow-x:clip}
+/* Meteor Catch — compact local canvas mini-game */
+.meteor-section{background:radial-gradient(ellipse at 68% 42%,#394675,#111a3d 74%);color:#fffaf5}
+.meteor-layout{display:grid;grid-template-columns:minmax(300px,.85fr) minmax(0,1.5fr);gap:45px;align-items:center}
+.meteor-intro h2{font:650 clamp(45px,5.4vw,74px)/1.1 var(--font-en);letter-spacing:-.05em;margin:23px 0 34px}
+.meteor-intro h2 em{display:block;font:italic 400 .93em Georgia,serif;color:#d7c2f5}
+.meteor-intro .meteor-lead{font-size:20px;color:#fff9f5;font-weight:700}
+.meteor-intro p{font-size:12px;color:#bac3e0;line-height:2.3;max-width:415px}
+.meteor-scoreboard{display:flex;gap:35px;border-top:1px solid #56618c;border-bottom:1px solid #56618c;margin:28px 0;padding:18px 0}
+.meteor-scoreboard>div{display:flex;flex-direction:column;gap:3px;min-width:65px}
+.meteor-scoreboard span{font:700 10px var(--font-en);letter-spacing:.17em;color:#b9a5d8}
+.meteor-scoreboard strong{font:700 35px var(--font-en);color:#ffe4b7;letter-spacing:.02em}
+.meteor-intro .meteor-message{color:#d5c5e6;min-height:28px;font-size:12px;font-weight:600;margin-top:19px}
+.meteor-stage{border:1px solid #8189b7;background:#101933;padding:18px 18px 15px;box-shadow:0 20px 45px #02061e66}
+.meteor-stage-bar,.meteor-stage-bottom{display:flex;justify-content:space-between;gap:15px;align-items:center;font:600 9px var(--font-en);letter-spacing:.16em;color:#bfc8e9}
+.meteor-stage-bar{padding:0 4px 15px}.meteor-stage-bottom{padding:13px 4px 0}
+#meteor-canvas{display:block;aspect-ratio:35/22;width:100%;height:auto;background:#101c3c;touch-action:manipulation;border:1px solid #41527b;cursor:crosshair}
+#meteor-canvas:focus-visible{outline:3px solid #ffe5b9;outline-offset:4px}
+body.sky-aurora .meteor-section{background:radial-gradient(ellipse at 68% 42%,#6c649a,#303b6d 70%)}
+@media(max-width:1100px){.meteor-layout{gap:20px;grid-template-columns:minmax(260px,.8fr) minmax(0,1.4fr)}}
+@media(max-width:850px){.meteor-layout{grid-template-columns:1fr}.meteor-intro h2 em{display:inline}.meteor-stage{max-width:750px;margin:auto;width:100%}}
+@media(max-width:650px){
+ .meteor-layout{gap:18px}
+ .meteor-intro h2{font-size:50px;margin-bottom:19px}
+ .meteor-intro h2 em{display:block}
+ .meteor-scoreboard strong{font-size:27px}
+ .meteor-stage{padding:11px}
+ .meteor-stage-bar,.meteor-stage-bottom{font-size:7px}
+}

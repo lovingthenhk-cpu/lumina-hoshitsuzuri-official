@@ -43,3 +43,4 @@ http://localhost:8000 を開いてください。
 
 ### Data handling
 Postcard and letter text is processed locally in browser memory; it is **not** saved to localStorage or sent to the site server. Progress and selected sky palette are stored locally where permitted. There is no registration, backend, analytics, or external API for the interactive features. Fonts are requested from Google Fonts when online.
+\n- **Meteor Catch**: 30-second pointer/touch/keyboard canvas mini-game, local high-score tracking, no online server.\n
