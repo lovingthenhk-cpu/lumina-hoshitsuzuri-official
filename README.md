@@ -2,6 +2,8 @@
 
 オリジナル架空キャラクター「星綴ルミナ」のコンセプト公式サイトです。
 
+**Live:** https://lovingthenhk-cpu.github.io/lumina-hoshitsuzuri-official/
+
 ## Features
 - レスポンシブな一枚構成の公式サイト（NEWS / STORY / PROFILE / GALLERY）
 - 独自SVGキャラクターアートとCSSによる星空・月・封筒のグラフィック

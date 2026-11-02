@@ -8,7 +8,9 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="星綴ルミナ | LUMINA Official Website">
   <meta property="og:description" content="まだ名前のない星に、手紙を。星の郵便屋・星綴ルミナの公式サイト。">
-  <meta property="og:image" content="assets/portrait.svg">
+  <meta property="og:image" content="https://lovingthenhk-cpu.github.io/lumina-hoshitsuzuri-official/assets/portrait.svg">
+  <meta property="og:url" content="https://lovingthenhk-cpu.github.io/lumina-hoshitsuzuri-official/">
+  <link rel="canonical" href="https://lovingthenhk-cpu.github.io/lumina-hoshitsuzuri-official/">
   <title>星綴ルミナ | LUMINA Official Website</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -83,9 +85,9 @@
           <span class="section-stamp" aria-hidden="true">✳ &nbsp; OPEN THE LETTER &nbsp; ✳</span>
         </div>
         <div class="news-list">
-          <article class="news-row"><time datetime="2026-11-02">2026.11.02</time><span class="news-category">INFO</span><h3>星綴ルミナ オフィシャルサイトがオープンしました！</h3><span class="news-arrow" aria-hidden="true">↗</span></article>
-          <article class="news-row"><time datetime="2026-10-21">2026.10.21</time><span class="news-category">STORY</span><h3>星の郵便局から、最初のお手紙をお届けします。</h3><span class="news-arrow" aria-hidden="true">↗</span></article>
-          <article class="news-row"><time datetime="2026-10-05">2026.10.05</time><span class="news-category">VISUAL</span><h3>メインビジュアル＆キャラクタープロフィール公開。</h3><span class="news-arrow" aria-hidden="true">↗</span></article>
+          <button type="button" class="news-row" data-news="0" aria-label="星綴ルミナ オフィシャルサイトがオープンしました！ 詳細を開く"><time datetime="2026-11-02">2026.11.02</time><span class="news-category">INFO</span><span class="news-headline">星綴ルミナ オフィシャルサイトがオープンしました！</span><span class="news-arrow" aria-hidden="true">↗</span></button>
+          <button type="button" class="news-row" data-news="1" aria-label="星の郵便局から、最初のお手紙をお届けします。 詳細を開く"><time datetime="2026-10-21">2026.10.21</time><span class="news-category">STORY</span><span class="news-headline">星の郵便局から、最初のお手紙をお届けします。</span><span class="news-arrow" aria-hidden="true">↗</span></button>
+          <button type="button" class="news-row" data-news="2" aria-label="メインビジュアル＆キャラクタープロフィール公開。 詳細を開く"><time datetime="2026-10-05">2026.10.05</time><span class="news-category">VISUAL</span><span class="news-headline">メインビジュアル＆キャラクタープロフィール公開。</span><span class="news-arrow" aria-hidden="true">↗</span></button>
         </div>
         <p class="fiction-note">※ このサイトに掲載された告知・日付・人物はすべて架空の作品設定です。</p>
       </div>
@@ -180,6 +182,7 @@
   </main>
   <footer class="footer"><div class="container footer-inner"><a class="footer-brand" href="#home">✧ LUMINA <small>OFFICIAL WEBSITE</small></a><p>© 2026 Hoshitsuzuri Lumina. Original fictional character concept.</p><p>このサイトおよび登場人物・お知らせは創作です。</p></div></footer>
 
+  <dialog id="news-dialog" class="news-dialog" aria-labelledby="news-dialog-title"><div class="news-dialog-content"><button type="button" class="news-dialog-close" aria-label="お知らせを閉じる">×</button><span class="news-dialog-date" id="news-dialog-date"></span><h3 id="news-dialog-title"></h3><p id="news-dialog-body"></p><span class="news-dialog-sign">✧ STAR POST OFFICE</span></div></dialog>
   <dialog id="gallery-dialog" class="gallery-dialog" aria-labelledby="dialog-title"><div class="dialog-inner"><button type="button" class="dialog-close" aria-label="閉じる">×</button><div class="dialog-art" id="dialog-art"></div><div class="dialog-footer"><span id="dialog-number">01 / 03</span><h3 id="dialog-title">Starlight Postgirl</h3></div></div></dialog>
 </body>
 </html>

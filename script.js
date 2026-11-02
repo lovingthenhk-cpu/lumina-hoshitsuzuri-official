@@ -33,6 +33,39 @@
   }, { passive: true });
   updateProgress();
 
+  const newsDialog = document.getElementById("news-dialog");
+  const newsItems = [
+    {
+      date: "2026.11.02 · INFO",
+      title: "星綴ルミナ オフィシャルサイトがオープンしました！",
+      body: "はじめまして、星綴ルミナです！ ここは、星の郵便局からみなさんにお手紙を届ける小さな場所。プロフィールも、わたしの物語も、どうぞゆっくり見ていってね。"
+    },
+    {
+      date: "2026.10.21 · STORY",
+      title: "星の郵便局から、最初のお手紙をお届けします。",
+      body: "「ねえ、言えなかった言葉って、どこへ行くと思う？」 それは夜空のはしっこで小さな星になるんだって。ルミナのお仕事は、そんな星を、もう一度誰かのもとへ届けることです。"
+    },
+    {
+      date: "2026.10.05 · VISUAL",
+      title: "メインビジュアル＆キャラクタープロフィール公開。",
+      body: "ルミナのトレードマークは、星のついた帽子、銀紫色の髪、そして胸元の小さなリボン。キャラクターのイラストはこのサイトのために制作したオリジナルSVGです。"
+    }
+  ];
+  document.querySelectorAll("[data-news]").forEach((row) => {
+    row.addEventListener("click", () => {
+      const item = newsItems[Number(row.dataset.news)];
+      if (!item || !newsDialog.showModal) return;
+      document.getElementById("news-dialog-date").textContent = item.date;
+      document.getElementById("news-dialog-title").textContent = item.title;
+      document.getElementById("news-dialog-body").textContent = item.body;
+      newsDialog.showModal();
+    });
+  });
+  document.querySelector(".news-dialog-close").addEventListener("click", () => newsDialog.close());
+  newsDialog.addEventListener("click", (event) => {
+    if (event.target === newsDialog) newsDialog.close();
+  });
+
   const dialog = document.getElementById("gallery-dialog");
   const dialogArt = document.getElementById("dialog-art");
   const dialogTitle = document.getElementById("dialog-title");
@@ -97,6 +130,7 @@
     sent++;
     reply.hidden = false;
     form.setAttribute("aria-hidden", "true");
+    document.getElementById("another-letter").focus();
   });
   document.getElementById("another-letter").addEventListener("click", () => {
     textarea.value = "";
