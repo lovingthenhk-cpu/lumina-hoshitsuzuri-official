@@ -1,0 +1,16 @@
+{
+  "id": "./",
+  "name": "星綴ルミナ — 星の郵便局",
+  "short_name": "星綴ルミナ",
+  "description": "ルミナの公式サイト。星図、星占い、診断、ポストカードを楽しもう。",
+  "lang": "ja",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0a102a",
+  "theme_color": "#1b2554",
+  "icons": [
+    { "src": "assets/app-icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "assets/app-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
