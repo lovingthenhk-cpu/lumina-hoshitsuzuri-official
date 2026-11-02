@@ -27,3 +27,14 @@
 .news-dialog p{font-size:13px;line-height:2.4;color:#5d6380}
 .news-dialog-sign{display:block;margin-top:38px;font:700 10px var(--font-en);letter-spacing:.15em;color:#9887b8}
 @media(max-width:650px){.news-dialog-content{padding:45px 25px 34px}.news-dialog h3{font-size:18px}}
+
+/* Isolated generated subject and props; backdrop and decoration remain CSS. */
+.hero-visual .character-art{height:auto;width:790px;max-width:none;bottom:20px;left:51%;transform:translateX(-45%);animation:none;filter:drop-shadow(0 28px 32px #080e295c);z-index:2}
+.hero-visual .star-companion-art{position:absolute;width:158px;height:auto;right:-25px;top:115px;z-index:5;filter:drop-shadow(0 8px 14px #0c123554);animation:twinkle 6s ease-in-out infinite}
+.hero-visual .lantern-art{position:absolute;width:115px;height:auto;top:250px;left:-10px;z-index:5;filter:drop-shadow(0 0 16px #f5d59a66)}
+.profile-image-wrap img{width:165%;height:auto;max-width:none;left:52%;bottom:-7%;transform:translateX(-45%)}
+.gallery-tile-a>img{width:158%;left:43%;top:8%}
+.gallery-tile-c>img{width:165%;left:45%;top:8%}
+.dialog-art img{width:115%;height:auto;max-width:none;margin-top:10px}
+@media(max-width:850px){.hero-visual .character-art{width:730px;bottom:20px}.hero-visual .star-companion-art{width:120px;right:0;top:140px}.hero-visual .lantern-art{width:82px;top:300px;left:-9px}}
+@media(max-width:650px){.hero-visual .character-art{width:610px;bottom:-3px;left:46%;transform:translateX(-43%)}.hero-visual .star-companion-art{width:100px;right:-8px;top:50px}.hero-visual .lantern-art{width:60px;left:0;top:180px}.profile-image-wrap img{width:190%;bottom:4%;left:47%}.gallery-tile-a>img{width:122%;top:8%;left:48%}.gallery-tile-c>img{width:195%;top:15%;left:40%}}

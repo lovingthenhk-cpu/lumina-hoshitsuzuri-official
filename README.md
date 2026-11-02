@@ -23,3 +23,8 @@ http://localhost:8000 を開いてください。
 このリポジトリの \`main\` ブランチの \`/\` をGitHub Pagesのソースに設定します。
 
 © 2026 Hoshitsuzuri Lumina. This is a fictional character concept, not a real entertainer.
+
+## Generated art assets
+- `assets/lumina-generated.png`: transparent PNG of Lumina, extracted from an AI-generated composition.
+- `assets/star-companion.png`, `assets/star-lantern.png`: transparent prop sprites.
+- Backgrounds, section decorations, cards, typography and layout are all HTML/CSS (not screenshot images).

@@ -71,9 +71,9 @@
   const dialogTitle = document.getElementById("dialog-title");
   const dialogNumber = document.getElementById("dialog-number");
   const gallery = [
-    { title: "Starlight Postgirl", image: "assets/portrait.svg", css: "" },
+    { title: "Starlight Postgirl", image: "assets/lumina-generated.png", css: "" },
     { title: "A Letter to the Sky", image: null, css: "letter-art" },
-    { title: "Moonlit Promise", image: "assets/portrait.svg", css: "moonlight" }
+    { title: "Moonlit Promise", image: "assets/lumina-generated.png", css: "moonlight" }
   ];
   document.querySelectorAll("[data-art]").forEach((tile) => {
     tile.addEventListener("click", () => {
